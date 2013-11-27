@@ -6,9 +6,9 @@
 <p>The repo is the un-consolidated, un-compiled unity project files for ease of access during development</p>
 
 <h2>The Guys</h2>
-<p>A php developer, a WPF developer and a flash animatior walk into a bar.... It sounds like a joke but the end result isn't that funny.  Those accountable for this repo's content are:
+<p>A php developer, a WPF developer and a flash animator walk into a bar.... It sounds like a joke but the end result isn't that funny - well, not for us.  Those accountable for this repo's content are:
 <ul>
-<li>Kane Burton - animation quirks? spam him.</li>
-<li>Sam Higton - gotta take flack for the level generation</li>
-<li>Jon Wells - this man is to blame for the character behaviours</li>
+<li><b>Kane Burton</b> - animation quirks? spam him.</li>
+<li><b>Sam Higton</b> - gotta take flack for the level generation</li>
+<li><b>Jon Wells</b> - this man is to blame for the character behaviours</li>
 </ul>
