@@ -1,7 +1,7 @@
 <h1>Jeykll and Hyde Collide</h1>
 
 <h2>The Game</h2>
-<p>This is a simple Unity 2d game for a games jam we've been working on.  The game is based around the theme of "change" and is completely open source.</p>
+<p>This is a simple Unity 2d game for a games jam we've been working on.  The game is very literally based around the theme of "change" using the classic Jeykll and Hyde story.</p>
 
 <p>The repo is the un-consolidated, un-compiled unity project files for ease of access during development</p>
 
