@@ -27,23 +27,33 @@ public class PlayerScript : MonoBehaviour
 		jump.enabled = isJeykll;
 		charge.enabled = !isJeykll;
 
+		Move();
+
+		if (Input.GetButtonDown("Fire1")) 
+		{
+			Transform();
+		}
+	}
+
+	void Move()
+	{
 		float inputX = Input.GetAxis("Horizontal");
 		Vector3 movement = new Vector3(speed * inputX, 0);
 		movement *= Time.deltaTime;
 		transform.Translate(movement);
+	}
 
-		if (Input.GetButtonDown("Fire1")) 
+	void Transform()
+	{
+		if (isJeykll)
 		{
-			if (isJeykll == true)
-			{
-				isJeykll = false;
-				anim.SetTrigger("Transform to Hyde");
-			}
-			else
-			{
-				isJeykll = true;
-				anim.SetTrigger("Transform to Jekyll");
-			}
+			isJeykll = false;
+			anim.SetTrigger("Transform to Hyde");
+		}
+		else
+		{
+			isJeykll = true;
+			anim.SetTrigger("Transform to Jekyll");
 		}
 	}
 
@@ -59,7 +69,7 @@ public class PlayerScript : MonoBehaviour
 			}
 			else 
 			{
-				Debug.Log("DEAD - Dude you hit the chimney");
+				IsDead = true;
 				speed = 0;
 				if (isJeykll)
 				{

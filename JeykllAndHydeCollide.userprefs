@@ -1,12 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerScript.cs">
     <Files>
-      <File FileName="Assets\Scripts\PlayerScript.cs" Line="60" Column="5" />
-      <File FileName="Assets\Scripts\Chimney.cs" Line="17" Column="2" />
-      <File FileName="Assets\Scripts\Jump.cs" Line="32" Column="22" />
-      <File FileName="Assets\Scripts\CameraTrackPlayer.cs" Line="19" Column="1" />
-      <File FileName="Assets\Scripts\Charge.cs" Line="5" Column="2" />
+      <File FileName="Assets\Scripts\PlayerScript.cs" Line="38" Column="13" />
+      <File FileName="Assets\Scripts\Chimney.cs" Line="25" Column="3" />
+      <File FileName="Assets\Scripts\Jump.cs" Line="31" Column="4" />
+      <File FileName="Assets\Scripts\Charge.cs" Line="28" Column="4" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -19,10 +18,8 @@
         </State>
       </Pad>
       <Pad Id="ClassPad">
-        <State expanded="True">
-          <Node name="Assembly-CSharp" expanded="True">
-            <Node name="Camera" selected="True" />
-          </Node>
+        <State expanded="True" selected="True">
+          <Node name="Assembly-CSharp" expanded="True" />
         </State>
       </Pad>
     </Pads>
