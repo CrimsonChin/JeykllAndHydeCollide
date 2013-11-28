@@ -35,7 +35,7 @@ public class PlayerScript : MonoBehaviour
 		}
 	}
 
-	void Move()
+	private void Move()
 	{
 		float inputX = Input.GetAxis("Horizontal");
 		Vector3 movement = new Vector3(speed * inputX, 0);
@@ -43,7 +43,7 @@ public class PlayerScript : MonoBehaviour
 		transform.Translate(movement);
 	}
 
-	void Transform()
+	private void Transform()
 	{
 		if (isJeykll)
 		{
@@ -57,6 +57,28 @@ public class PlayerScript : MonoBehaviour
 		}
 	}
 
+	private void Die()
+	{
+		IsDead = true;
+		speed = 0;
+
+		if (isJeykll)
+		{
+			anim.SetTrigger("Jeykll Dead");
+		}
+		else 
+		{
+			anim.SetTrigger("Hyde Dead");
+		}
+
+		transform.parent.gameObject.AddComponent<GameOverScript>();
+	}
+
+	void OnBecameInvisible()
+	{
+		Die();
+	}
+	
 	void OnTriggerEnter2D(Collider2D collider)
 	{
 		Chimney chimney = collider.gameObject.GetComponent<Chimney>();
@@ -69,17 +91,7 @@ public class PlayerScript : MonoBehaviour
 			}
 			else 
 			{
-				IsDead = true;
-				speed = 0;
-				if (isJeykll)
-				{
-					anim.SetTrigger("Jeykll Dead");
-				}
-				else 
-				{
-					anim.SetTrigger("Hyde Dead");
-				}
-
+				Die ();
 			}
 		}
 	}

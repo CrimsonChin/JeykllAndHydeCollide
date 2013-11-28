@@ -20,5 +20,6 @@ public class Chimney : MonoBehaviour
 	{
 		anim.SetTrigger ("Demolish");
 		gameObject.collider2D.enabled = false;
+		SoundEffectsHelper.Instance.MakeChimneyCollapseSound();
 	}
 }
